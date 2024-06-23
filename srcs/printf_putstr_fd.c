@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   printf_putstr_fd.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ktsukamo <ktsukamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 17:11:19 by ktsukamo          #+#    #+#             */
-/*   Updated: 2024/04/27 17:45:10 by ktsukamo         ###   ########.fr       */
+/*   Updated: 2024/06/23 22:01:49 by ktsukamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-int	ft_putstr_fd(char *s, int fd)
+int	printf_putstr_fd(char *s, int fd)
 {
 	size_t	length;
 	size_t	already_written;
@@ -23,7 +23,7 @@ int	ft_putstr_fd(char *s, int fd)
 		write(fd, "(null)" , 6);
 		return (6);
 	}
-	length = ft_strlen(s);
+	length = printf_strlen(s);
 	already_written = 0;
 	write_to_byte = 0;
 	while (length > write_to_byte)

@@ -5,13 +5,13 @@ CC = cc
 CFLAGS = -Wall -Werror -Wextra
 
 SOURCES = srcs/ft_printf.c
-SOURCES += srcs/ft_putchar_fd.c
-SOURCES += srcs/ft_putstr_fd.c
+SOURCES += srcs/printf_putchar_fd.c
+SOURCES += srcs/printf_putstr_fd.c
 SOURCES += srcs/ft_puthex.c
 SOURCES += srcs/ft_puthex_uns.c
-SOURCES += srcs/ft_putnbr_fd.c
+SOURCES += srcs/printf_putnbr_fd.c
 SOURCES += srcs/ft_putnbr_uns_fd.c
-SOURCES += srcs/ft_strlen.c
+SOURCES += srcs/printf_strlen.c
 
 
 OBJECTS = $(SOURCES:.c=.o)

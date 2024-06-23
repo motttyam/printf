@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   printf_strlen.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ktsukamo <ktsukamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/06 22:14:06 by ktsukamo          #+#    #+#             */
-/*   Updated: 2024/04/27 17:28:30 by ktsukamo         ###   ########.fr       */
+/*   Created: 2024/04/24 15:04:01 by ktsukamo          #+#    #+#             */
+/*   Updated: 2024/06/23 21:59:17 by ktsukamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-int	ft_putchar_fd(char c, int fd)
+size_t	printf_strlen(const char *s)
 {
-	return (write(fd, &c, 1));
+	size_t	length;
+
+	length = 0;
+	while (s[length] != '\0')
+	{
+		length++;
+	}
+	return (length);
 }

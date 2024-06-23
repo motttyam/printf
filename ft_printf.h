@@ -8,10 +8,10 @@
 # include <unistd.h>
 
 // ft_putchar_fd.c
-int		ft_putchar_fd(char c, int fd);
+int		printf_putchar_fd(char c, int fd);
 
 // ft_putstr_fd.c
-int		ft_putstr_fd(char *s, int fd);
+int		printf_putstr_fd(char *s, int fd);
 
 // ft_puthex.c
 int		ft_puthex(long int num, int flag);
@@ -22,11 +22,11 @@ int		ft_puthex_uns(unsigned long int num);
 void	ft_puthex_uns_recursive(unsigned long int num, int *count);
 
 //ft_strlen.c
-size_t	ft_strlen(const char *s);
+size_t	printf_strlen(const char *s);
 
 // ft_putnbr.c
-int		ft_putnbr_fd(int n, int fd);
-void	put_recursive(int n, int fd, int *count);
+int		printf_putnbr_fd(int n, int fd);
+void	printf_put_recursive(int n, int fd, int *count);
 
 // ft_putnbr_uns.c
 void	putnbr_uns_recursive(unsigned int n, int fd, int *count);
